@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:padding="16dp">
+
+    <!-- Number Display -->
+    <TextView
+        android:id="@+id/tv_number_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter Number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <!-- Dial Pad -->
+    <GridLayout
+        android:id="@+id/gl_dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+
+    </GridLayout>
+
+    <!-- Call and Clear Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/green"
+            android:text="CALL"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/red"
+            android:text="CLEAR"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

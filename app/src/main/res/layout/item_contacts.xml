@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    android:elevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_name_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+        android:layout_marginHorizontal="5dp"
+        app:cardCornerRadius="50dp">
+
+        <TextView
+            android:id="@+id/tv_initial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:text="U"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/tv_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/mcv_name_icon"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="Unknown"/>
+
+    <TextView
+        android:id="@+id/tv_number_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_contact_name"
+        android:layout_toRightOf="@id/mcv_name_icon"
+        android:textSize="18sp"
+        android:maxLength="14"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="+91 5555555555"/>
+
+
+
+</RelativeLayout>

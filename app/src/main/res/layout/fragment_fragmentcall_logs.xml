@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentcallLogs">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_dialer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        app:strokeColor="@color/black"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dialer"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
