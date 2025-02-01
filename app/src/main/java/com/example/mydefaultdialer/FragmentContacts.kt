@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mydefaultdialer.databinding.FragmentContactsBinding
 
@@ -41,7 +42,22 @@ class FragmentContacts : Fragment() {
 
         // Set up RecyclerView
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        binding.recyclerView.adapter = ContactsAdapter(contacts)
+        binding.recyclerView.adapter = ContactsAdapter(contacts) { selectedContact ->
+            val contactTouchFragment = BlankFragment_contact_touch().apply {
+                arguments = Bundle().apply {
+                    putString("param1", selectedContact.name)
+                    putString("param2",selectedContact.phoneNumber)
+
+                }
+            }
+
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, contactTouchFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
+        binding.recyclerView.addItemDecoration((DividerItemDecoration(context, LinearLayoutManager.VERTICAL)))
 
     }
 
