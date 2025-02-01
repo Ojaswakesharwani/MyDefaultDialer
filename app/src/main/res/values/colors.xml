@@ -9,4 +9,14 @@
     <color name="black_overlay">#66000000</color>
     <color name="green">#71DE75</color>
     <color name="red">#F44336</color>
+    <color name="yellow">#E1BB49</color>
+    <color name="sky_blue">#92caeb</color>
+    <color name="gras">#c8d048</color>
+    <color name="gray">#B2B3B0</color>
+    <color name="black_second">#313131</color>
+    <color name="arrow_green">#0d7766</color>
+    <color name="edit_tv_color">#f9f9f9</color>
+    <color name="circle_colour">#c0eee5</color>
+    <color name="orange_golden">#ddb276</color>
+    <color name="pink">#f9abb9</color>
 </resources>

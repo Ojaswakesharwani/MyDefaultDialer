@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke android:color="@color/edit_tv_color" android:width="0dp"/>
+    <solid android:color="@color/edit_tv_color" />
+    <size android:width="50dp" android:height="50dp" />
+    <corners android:radius="25dp" />
+
+</shape>
